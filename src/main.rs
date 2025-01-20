@@ -17,6 +17,9 @@ pub enum Command {
         /// Path to the database
         #[clap(long, short)]
         db_path: String,
+        /// Block height (OPTIONAL)
+        #[clap(long, short)]
+        block_height: Option<u32>
     },
     /// Gets the latest DA recorded height in the gas price database
     GetDaRecordedHeight {
@@ -38,14 +41,18 @@ pub enum Command {
 fn main() -> anyhow::Result<()> {
     let args = Command::parse();
     match args {
-        Command::GetGasPriceMetadata { db_path } => {
+        Command::GetGasPriceMetadata { db_path, block_height } => {
             let path = Path::new(db_path.as_str());
             let combined_db = get_db(path)?;
 
             let gas_price_db = combined_db.gas_price();
-            let height = gas_price_db
-                .latest_height()
-                .ok_or(anyhow::anyhow!("Failed to get latest height"))?;
+            let height = if let Some(height) = block_height {
+                BlockHeight::new(height)
+            } else {
+                gas_price_db
+                    .latest_height()
+                    .ok_or(anyhow::anyhow!("Failed to get latest height"))?
+            };
             let metadata = gas_price_db
                 .get_metadata(&height)?
                 .ok_or(anyhow::anyhow!("Failed to get metadata"))?;
