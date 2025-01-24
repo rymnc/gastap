@@ -1157,15 +1157,15 @@ dependencies = [
  "fuel-core-consensus-module",
  "fuel-core-database",
  "fuel-core-executor",
- "fuel-core-gas-price-service 0.41.3",
+ "fuel-core-gas-price-service 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "fuel-core-importer",
- "fuel-core-metrics 0.41.3",
+ "fuel-core-metrics 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "fuel-core-poa",
  "fuel-core-producer",
- "fuel-core-services 0.41.3",
- "fuel-core-storage 0.41.3",
+ "fuel-core-services 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "fuel-core-txpool",
- "fuel-core-types 0.41.3",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "fuel-core-upgradable-executor",
  "futures",
  "hex",
@@ -1202,8 +1202,8 @@ dependencies = [
  "anyhow",
  "bech32",
  "derivative",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "itertools 0.12.1",
  "postcard",
  "serde",
@@ -1219,7 +1219,7 @@ source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-r
 dependencies = [
  "anyhow",
  "enum_dispatch",
- "fuel-core-types 0.41.3",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "paste",
  "serde",
  "strum 0.25.0",
@@ -1234,8 +1234,8 @@ dependencies = [
  "anyhow",
  "fuel-core-chain-config",
  "fuel-core-poa",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
 ]
 
 [[package]]
@@ -1245,8 +1245,8 @@ source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-r
 dependencies = [
  "anyhow",
  "derive_more 0.99.18",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
 ]
 
 [[package]]
@@ -1255,8 +1255,8 @@ version = "0.41.3"
 source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly#7929f776165b477a1701042132820b9472099709"
 dependencies = [
  "anyhow",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "hex",
  "parking_lot",
  "serde",
@@ -1265,17 +1265,17 @@ dependencies = [
 
 [[package]]
 name = "fuel-core-gas-price-service"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "87f91822c4d1c9a15b7d30db1db66a896db2f06a3bd44e1bfb02a4fc527a5e98"
+checksum = "6892243b443eca566420328fa30867e0746a4763ebb5caf965090693bfaf1056"
 dependencies = [
  "anyhow",
  "async-trait",
  "enum-iterator",
- "fuel-core-services 0.41.2",
- "fuel-core-storage 0.41.2",
- "fuel-core-types 0.41.2",
- "fuel-gas-price-algorithm 0.41.2",
+ "fuel-core-services 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "fuel-core-storage 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "fuel-core-types 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
+ "fuel-gas-price-algorithm 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures",
  "num_enum",
  "parking_lot",
@@ -1299,10 +1299,10 @@ dependencies = [
  "anyhow",
  "async-trait",
  "enum-iterator",
- "fuel-core-services 0.41.3",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
- "fuel-gas-price-algorithm 0.41.3",
+ "fuel-core-services 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-gas-price-algorithm 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "futures",
  "num_enum",
  "parking_lot",
@@ -1325,9 +1325,9 @@ source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-r
 dependencies = [
  "anyhow",
  "derive_more 0.99.18",
- "fuel-core-metrics 0.41.3",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-metrics 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "parking_lot",
  "rayon",
  "tokio",
@@ -1336,9 +1336,9 @@ dependencies = [
 
 [[package]]
 name = "fuel-core-metrics"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "79c9914502f0f1499dcda6f70759be11836a244f87065678de0336f4bb4fd9df"
+checksum = "86c259a22d3af5cd11c334e0a8f90aaca5835d0ca0f915457748e82dedbfffba"
 dependencies = [
  "once_cell",
  "parking_lot",
@@ -1373,9 +1373,9 @@ dependencies = [
  "anyhow",
  "async-trait",
  "fuel-core-chain-config",
- "fuel-core-services 0.41.3",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-services 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "serde",
  "serde_json",
  "tokio",
@@ -1391,8 +1391,8 @@ dependencies = [
  "anyhow",
  "async-trait",
  "derive_more 0.99.18",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "tokio",
  "tokio-rayon",
  "tracing",
@@ -1400,13 +1400,13 @@ dependencies = [
 
 [[package]]
 name = "fuel-core-services"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9a4839f938e14bda3925aa0569d552014d98be1750d17440b365e18890505ee7"
+checksum = "aa49dd886d63ed85b0abf8c6b18c2a02aa81b655ac008e0407107417ae6eb2e5"
 dependencies = [
  "anyhow",
  "async-trait",
- "fuel-core-metrics 0.41.2",
+ "fuel-core-metrics 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "futures",
  "parking_lot",
  "pin-project-lite",
@@ -1421,7 +1421,7 @@ source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-r
 dependencies = [
  "anyhow",
  "async-trait",
- "fuel-core-metrics 0.41.3",
+ "fuel-core-metrics 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "futures",
  "parking_lot",
  "pin-project-lite",
@@ -1432,14 +1432,14 @@ dependencies = [
 
 [[package]]
 name = "fuel-core-storage"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2316fe3c325df2cf814b40e8f5918f8ab21b27388915436d1ee1d4b4801f077"
+checksum = "07f511f5a8f272367e65494b782238b03ab9970712edcbe7fdd1de7484ed7d08"
 dependencies = [
  "anyhow",
  "derive_more 0.99.18",
  "enum-iterator",
- "fuel-core-types 0.41.2",
+ "fuel-core-types 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "fuel-vm",
  "impl-tools",
  "itertools 0.12.1",
@@ -1460,7 +1460,7 @@ dependencies = [
  "anyhow",
  "derive_more 0.99.18",
  "enum-iterator",
- "fuel-core-types 0.41.3",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "fuel-vm",
  "impl-tools",
  "itertools 0.12.1",
@@ -1481,10 +1481,10 @@ dependencies = [
  "anyhow",
  "async-trait",
  "derive_more 0.99.18",
- "fuel-core-metrics 0.41.3",
- "fuel-core-services 0.41.3",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-metrics 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-services 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
  "futures",
  "num-rational",
  "parking_lot",
@@ -1496,9 +1496,9 @@ dependencies = [
 
 [[package]]
 name = "fuel-core-types"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7bcbdccf728872ae7f8534bc60f22c1ecdd0bc13b3cc30735eb235fc0d821851"
+checksum = "55391a98166504ec91b0cd301d1d3cf179e842f3c734e384fa5212e04993064d"
 dependencies = [
  "anyhow",
  "bs58",
@@ -1536,8 +1536,8 @@ version = "0.41.3"
 source = "git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly#7929f776165b477a1701042132820b9472099709"
 dependencies = [
  "fuel-core-executor",
- "fuel-core-storage 0.41.3",
- "fuel-core-types 0.41.3",
+ "fuel-core-storage 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
+ "fuel-core-types 0.41.3 (git+https://github.com/fuellabs/fuel-core?branch=chore%2Fcombined-db-readonly)",
 ]
 
 [[package]]
@@ -1575,9 +1575,9 @@ dependencies = [
 
 [[package]]
 name = "fuel-gas-price-algorithm"
-version = "0.41.2"
+version = "0.41.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "708d73176eb0b066301ab380457e13e12da04357143e194e44e287b62e08390d"
+checksum = "7e2aa00cae09bb7e3e76660bb065861cf36f9f3438388e9cae4a29678b5dc52c"
 dependencies = [
  "serde",
  "thiserror 1.0.69",
@@ -1794,7 +1794,7 @@ dependencies = [
  "anyhow",
  "clap",
  "fuel-core",
- "fuel-core-gas-price-service 0.41.2",
+ "fuel-core-gas-price-service 0.41.3 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]

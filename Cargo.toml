@@ -7,4 +7,4 @@ edition = "2021"
 fuel-core = { git = "https://github.com/fuellabs/fuel-core", branch = "chore/combined-db-readonly", features = ["rocksdb", "backup"] }
 clap = {  version = "4.5.23" , features = ["derive"]}
 anyhow = "1.0.95"
-fuel-core-gas-price-service = "0.41.2"
+fuel-core-gas-price-service = "0.41.3"
