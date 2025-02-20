@@ -6,5 +6,5 @@ edition = "2021"
 [dependencies]
 fuel-core = { git = "https://github.com/FuelLabs/fuel-core", branch = "chore/combined-db-readonly", features = ["rocksdb", "backup"] }
 clap = {  version = "4.5.29" , features = ["derive"]}
-anyhow = "1.0.95"
+anyhow = "1.0.96"
 fuel-core-gas-price-service = { git = "https://github.com/FuelLabs/fuel-core", branch = "chore/combined-db-readonly" }
